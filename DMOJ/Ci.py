@@ -1,10 +1,9 @@
 print("Hello and welcome to byte33's cipher program")
-print("02/05/19 V0.4\n")
+print("02/05/19 V0.41\n")
 
 
 upperList = list()
 lowerList = list()
-
 
 
 # Make list of uppercase characters
@@ -105,8 +104,9 @@ generateUppercase()
 generateLowercase()
 
 try:
-    typ = int(input("How would you like to enter the message?\n1 for manual entry(encode)\n2 for file entry(encode)\n3 for manual entry(decode)\n4 for file entry(decode)\n"))
-except Exception:
+    typ = int(input("How would you like to enter the message?\n1 for manual entry(encode)\n\
+    2 for file entry(encode)\n3 for manual entry(decode)\n4 for file entry(decode)\n"))
+except TypeError:
     typ = 1
 
 if typ == 1:
@@ -141,8 +141,3 @@ elif typ == 4:
 
 else:
     print("Not a valid input")
-
-
-
-
-
